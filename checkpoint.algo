@@ -1,0 +1,29 @@
+ALGORITHM checkpoint
+
+VAR
+
+    mot:= CHAR;
+    longueur:= 0;
+    mot_conte:= 0;
+    voyelles_count:= 0;
+
+    voyelles:= "aeiouAEIOU";
+
+BEING
+
+    phrase:= ("Bonjour je suis un développeur");
+
+    FOR i FROM 0 TO phrase.lenght - 1 DO
+        longueur:= i + 1;
+    END_FOR
+
+    if (mot = true)
+    mot_conte:= + 1;
+    
+    if (mot = voyelles)
+    voyelles_count:= + 1;
+
+    Write ("Longueur de la phrase", longueur);
+    Write ("Nombre de mots", mot_conte);
+    Write ("Nombre de voyelles", voyelles_count);
+END
